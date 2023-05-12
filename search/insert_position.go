@@ -12,7 +12,6 @@ func searchInsert(nums []int, target int) int {
 }
 
 func main() {
-
 	var arr []int
 	arr = append(arr, 1, 3, 5, 6)
 	result := searchInsert(arr, 7)

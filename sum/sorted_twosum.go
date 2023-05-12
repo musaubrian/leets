@@ -19,6 +19,7 @@ func sortedTwoSum(numbers []int, target int) []int {
 
 	return nil
 }
+
 func main() {
 	var arr []int
 	arr = append(arr, 3, 5, 8, 11, 15, 18, 20, 25, 30, 35)
