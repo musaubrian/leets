@@ -11,7 +11,10 @@ func isMirror(a *TreeNode, b *TreeNode) bool {
 		return true
 	}
 	if a == nil || b == nil {
-		return true
+		return false
+	}
+	if a.Val != b.Val {
+		return false
 	}
 	return isMirror(a.Left, b.Right) && isMirror(a.Right, b.Left)
 
@@ -22,5 +25,4 @@ func isSymmetric(root *TreeNode) bool {
 		return true
 	}
 	return isMirror(root.Left, root.Right)
-
 }
